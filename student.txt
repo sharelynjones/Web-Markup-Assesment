@@ -1,0 +1,4 @@
+Student name: Sharelyn Jones
+Student number: 642097
+Student class: IT_1C
+Student Github: https://github.com/sharelynjones/Web-Markup-Assesment.git

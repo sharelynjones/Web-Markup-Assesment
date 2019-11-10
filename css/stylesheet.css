@@ -1,0 +1,597 @@
+body
+{ 
+	font-family: 'Arial', sans-serif;
+
+}
+
+#title
+{
+	margin:0 auto; 
+	display: table;
+	font-size: 4em; 
+	font-family: 'Bowlby One SC', cursive;
+	text-shadow: -1px 0 #FFFFFF , 0 1px #FFFFFF , 1px 0 #FFFFFF , 0 -1px #FFFFFF; 
+	font-size: 4em; 
+	padding: 1em 0em; 
+	color: black; 
+	text-align: center;
+}
+
+#payoff
+{
+	margin: 0em auto; 
+	display:table; 
+	font-size: 1.2em; 
+	padding: 1em 0em; 
+	color: #FFFFFF; 
+	text-align:center;
+}
+
+
+video
+{
+	z-index: -1;
+	top: 0;
+	left: 0;
+	position: absolute;
+	height:100%;	
+	width:100%;
+	clip: rect(0px,1900px,300px,0px);
+}
+
+/*___________________________________________________NAV HEADER_______________________________________________*/
+
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+
+section
+{
+	width: 100%; 
+	max-width: 75em; 
+	margin: 0em auto; 
+	display: table; 
+	position: relative;
+}
+
+header
+{
+	width: 100%; 
+	display: table; 
+	background-color: black; 
+	margin-bottom: 3em;
+}
+
+nav
+{
+	width: auto; 
+	float: right;
+}
+nav ul
+{
+	display: table; 
+	float: right;
+}
+
+nav ul li
+{
+	float: left;
+}
+
+nav ul li:last-child
+{
+	padding-right: 0em;
+}
+
+nav ul li a
+{
+	color:#FFFFFF; 
+	font-size: 1em; 
+	padding: 1.5em 1em; 
+	display: inline-block; 
+	transition: all 0.5s ease 0s;
+}
+
+nav ul li a:hover
+{
+	background-color: gray; 
+	color: white; 
+	transition: all 0.5s ease 0s;
+} 
+
+.toggle-menu ul
+{
+	display: table; 
+	width: 1.5em;
+}
+
+.toggle-menu ul li
+{
+	width: 100%; height: 0.2em; 
+	background-color: #FFFFFF; 
+	margin-bottom: 0.3em;
+}
+
+.toggle-menu ul li:last-child
+{
+	margin-bottom: 0em;
+}
+
+input[type=checkbox], label
+{
+	display: none;
+}
+
+label 
+{
+	padding:8px 0px; 
+}
+
+@media only screen and (max-width: 1440px) 
+{
+	section
+	{
+		max-width:95%;
+	}
+}
+
+@media only screen and (max-width: 980px) 
+{
+	header
+	{
+		padding:20px 0px;
+	}
+
+
+input[type=checkbox] 
+{
+	position: absolute; 
+	top: -9999px; 
+	left: -9999px; 
+	background:none;
+}
+
+input[type=checkbox]:fous
+{
+	background:none;
+}
+
+label 
+{
+	float:right; 
+	padding:8px 0px; 
+	display:inline-block; 
+	cursor:pointer; 
+}
+
+input[type=checkbox]:checked ~ nav 
+{
+	display:block;
+}
+
+nav
+{
+	display:none; 
+	position:absolute; 
+	right:0px; top:53px; 
+	background-color: #1C2833; 
+	padding:0px; 
+	z-index:99;
+}
+
+nav ul
+{
+	width:auto;
+}
+
+nav ul li
+{
+	float:none; 
+	padding:0px; 
+	width:100%; 
+	display:table;
+}
+
+nav ul li a
+{
+	color:#FFF; 
+	font-size:15px; 
+	padding:10px 20px; 
+	display:block; 
+	border-bottom: 1px solid rgba(225,225,225,0.1);
+}
+
+nav ul li a i
+{
+	color:#fde428; padding-right:13px;
+}
+}
+
+@media only screen and (max-width: 980px) 
+{
+.content{width:90%;}
+}
+
+@media only screen and (max-width: 568px) 
+{
+h1
+{
+	padding:25px 0px;
+}
+h1 span
+{
+	display:block;
+}
+}
+
+@media only screen and (max-width: 480px) 
+{
+section 
+{
+	max-width: 90%;
+}
+}
+
+@media only screen and (max-width: 360px) 
+{
+
+label
+{
+	padding:5px 0px;
+}
+
+nav
+{
+	top:47px;
+}
+}
+
+@media only screen and (max-width: 320px) 
+{
+#title 
+{
+	padding: 20px 0px;
+}
+}
+
+/*______________________________________________CONTENT (Main, Secondary & Sport)_______________________________________________*/
+.content .content /* 2x due to sizing */
+{
+	display: table; 
+	margin-bottom: 4em; 
+	width: 56em;
+}
+
+.content h3
+{
+	font-size: 1.5em; 
+	font-weight: 500; 
+	color: #000000; border-bottom: 0.06em solid #1C2833; 
+	display:table; 
+	padding-bottom: 0.6em; 
+	margin-bottom: 0.6em;
+	margin-top: 60px;
+}
+
+.content p
+{
+	font-size: 1em; 
+	line-height: 1.4em; 
+	color: black; 
+	text-align:justify;
+}
+
+.content 
+{
+	background-color: white;
+	z-index: 1;
+}
+
+#spt
+{
+	margin-top: 10px;
+}
+
+#club
+{
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.content, #referralcontent
+{
+	margin-bottom: 40px;
+}
+
+
+.spacelines
+{
+	margin-top: 10px;
+}
+/*______________________________________^^IMAGES FOR CONTENT(Haarlem & Haarlem Center) ^^_______________________________________________*/
+
+
+#maincontent #mainimages
+{
+	display: grid;
+	grid-row-gap: 1em;
+	padding:1em;
+	margin: 2em;
+	width:22em;
+	height: 13em;
+	size: 0.6em;
+	grid-template-columns: 30%;
+	float:left;
+}
+
+.CRfooter
+{
+	margin-left: 10em;
+	font-size: 0.8em
+}
+
+#secondarycontent #secondaryimages
+{
+	display: grid;
+	grid-row-gap: 1em;
+	padding:1em;
+	margin: 2em;
+	width:22em;
+	height: 13em;
+	size: 0.6em;
+	grid-template-columns: 30%;
+	float:left;
+}
+
+/*________________________________________________SPORT CONTENT_____________________________________________*/
+
+
+/*________________________________________________SPORT IMG_____________________________________________*/
+
+#taekwondoIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:260px;
+	height: 150px;
+}
+
+#capoeiraIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:230px;
+	height: 150px;
+}
+#gymnasticsIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:200px;
+	height: 150px;
+}
+#athleticsIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:200px;
+	height: 150px;
+}
+#korfballIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:200px;
+	height: 150px;
+}
+
+#canoeIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:250px;
+	height: 150px;
+}
+
+#cyclingIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:220px;
+	height: 150px;
+}
+
+#baseballIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:250px;
+	height: 150px;
+}
+#softballIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:250px;
+	height: 150px;
+}
+#footballIMG
+{
+	size:10px;
+	margin:10px;
+	padding: 0px;
+	width:250px;
+	height: 150px;
+}
+
+
+/*________________________________________________SPORT CONTENT_____________________________________________*/
+
+
+
+.content, #referralcontent
+{
+	
+	margin-left: 4%;
+	
+}
+
+
+
+/*___________________________________________________CONTACT SECTION_______________________________________________*/
+fieldset
+{
+	border-color: #34495E;
+	border-style: solid;
+	border-width: 1px;
+	margin: 1em;
+	padding: 4em;
+	margin-top:50px;
+}
+legend
+{
+	font-size: 30px;
+}
+.contact-field /*fieldset*/
+{
+	width: 85%;
+	max-width: 600px;
+	background:#FFFF;
+	position: absolute;
+	left:50%;
+	transform: translate(-50%, -50%);
+	padding: 30px 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px black;
+	margin-top: 300px;
+
+}
+
+.contact-form h1
+{
+	margin-top: 0;
+	font-weight: 200;
+}
+.txtb
+{
+	margin: 0;
+	text-align:left;
+}
+
+
+
+button
+{
+	display: block;
+	background: #1C2833;
+	padding: 14px 0;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 8px;
+	width: 100%;
+}
+
+
+input[type=text]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc ;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+label
+{ 
+	float: left; 
+}
+
+#message
+{
+    padding-bottom: 60px;
+}
+
+input
+{
+      opacity: 1;
+}
+
+input[type=submit] 
+{
+    width: 100%;
+    background-color: #1C2833;
+    color: white;
+    padding: 14px 20px;
+    margin: 14px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 1px 1px black;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+p
+{
+	padding-right: 60px;
+
+}
+
+
+
+
+
+#page-footer
+{
+	clear: both;
+	margin-top: 300px;
+	margin-bottom: 30px;
+	margin-left: 50px;
+}
+
+input[type="checkbox" i] 
+{
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 0.5ex;
+    padding: initial;
+    border: initial
+}
+
+#cookie
+{
+    background-color: #27AE60;
+    height: 38px;
+    position: sticky;
+    z-index: 2;
+    bottom: 0;
+    width: auto;
+    font-size: 12px;
+    
+    display: grid;
+    margin-top: 40px;
+    padding:0 30px 0 30px;
+}
+
+
+
+
+
+
